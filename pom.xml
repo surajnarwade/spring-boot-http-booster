@@ -48,6 +48,14 @@
       </dependency>
       -->
       <!-- Spring BOM File -->
+      <!--
+      Change done within the BOM to use upstream versions
+      <version.org.apache.tomcat.embed.tomcat-embed-core>8.0.36</version.org.apache.tomcat.embed.tomcat-embed-core>
+      <version.org.apache.tomcat.embed.tomcat-embed-el>8.0.36</version.org.apache.tomcat.embed.tomcat-embed-el>
+      <version.org.apache.tomcat.embed.tomcat-embed-jasper>8.0.36</version.org.apache.tomcat.embed.tomcat-embed-jasper>
+      <version.org.apache.tomcat.embed.tomcat-embed-websocket>8.0.36</version.org.apache.tomcat.embed.tomcat-embed-websocket>
+      <version.org.hibernate.hibernate-validator>5.2.4.Final</version.org.hibernate.hibernate-validator>
+      -->
       <dependency>
         <groupId>io.openshift</groupId>
         <artifactId>spring-boot-bom</artifactId>
