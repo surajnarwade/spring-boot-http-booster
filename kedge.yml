@@ -1,0 +1,27 @@
+name: springboot
+
+deploymentConfigs:
+- containers:
+  - image: " "
+    env:
+    - name: JAVA_APP_JAR
+      value: spring-boot-rest-http-14-SNAPSHOT-exec.jar
+  triggers:
+  - imageChangeParams:
+     automatic: true
+     containerNames:
+     - springboot
+     from:
+      kind: ImageStreamTag
+      name: springboot:latest
+    type: ImageChange
+    
+routes:
+- to:
+   kind: Service
+   name: springboot
+
+
+services:
+- portMappings:
+  - "8080"
